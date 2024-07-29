@@ -12,3 +12,4 @@ C:\VisualStudio\B Module\InventoryManagementApp\obj\Debug\net8.0\refint\Inventor
 C:\VisualStudio\B Module\InventoryManagementApp\obj\Debug\net8.0\InventoryManagementApp.pdb
 C:\VisualStudio\B Module\InventoryManagementApp\obj\Debug\net8.0\InventoryManagementApp.genruntimeconfig.cache
 C:\VisualStudio\B Module\InventoryManagementApp\obj\Debug\net8.0\ref\InventoryManagementApp.dll
+C:\VisualStudio\B Module\InventoryManagementApp\obj\Debug\net8.0\InventoryManagementApp.sourcelink.json

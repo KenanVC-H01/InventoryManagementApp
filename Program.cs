@@ -98,4 +98,133 @@ namespace InventoryManagement
             }
         }
     }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Inventory inventory = new Inventory();
+            bool exit = false;
+
+            while (!exit)
+            {
+                Console.WriteLine("\nInventory Management System");
+                Console.WriteLine("1. Add New Product");
+                Console.WriteLine("2. Remove Product");
+                Console.WriteLine("3. Search for Product");
+                Console.WriteLine("4. Update Product Information");
+                Console.WriteLine("5. Display All Products");
+                Console.WriteLine("6. Exit");
+                Console.Write("Select an option: ");
+
+                string? choice = Console.ReadLine();
+
+                switch (choice)
+                {
+                    case "1":
+                        AddNewProduct(inventory);
+                        break;
+                    case "2":
+                        RemoveProduct(inventory);
+                        break;
+                    case "3":
+                        SearchProduct(inventory);
+                        break;
+                    case "4":
+                        UpdateProductInformation(inventory);
+                        break;
+                    case "5":
+                        inventory.DisplayAllProducts();
+                        break;
+                    case "6":
+                        exit = true;
+                        break;
+                    default:
+                        Console.WriteLine("Invalid option. Please try again.");
+                        break;
+                }
+            }
+        }
+
+        static void AddNewProduct(Inventory inventory)
+        {
+            Console.Write("Enter Product ID: ");
+            int id = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter Product Name: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Enter Product Description: ");
+            string description = Console.ReadLine();
+
+            Console.Write("Enter Product Quantity: ");
+            int quantity = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter Product Price: ");
+            decimal price = decimal.Parse(Console.ReadLine());
+
+            Product product = new Product(id, name, description, quantity, price);
+            inventory.AddProduct(product);
+        }
+
+        static void RemoveProduct(Inventory inventory)
+        {
+            Console.Write("Enter Product ID to remove: ");
+            int id = int.Parse(Console.ReadLine());
+            inventory.RemoveProduct(id);
+        }
+
+        static void SearchProduct(Inventory inventory)
+        {
+            Console.Write("Enter Product ID to search or Product Name: ");
+            string input = Console.ReadLine();
+            if (int.TryParse(input, out int id))
+            {
+                var product = inventory.SearchProduct(id);
+                if (product != null)
+                {
+                    Console.WriteLine(product);
+                }
+                else
+                {
+                    Console.WriteLine("Product not found.");
+                }
+            }
+            else
+            {
+                var products = inventory.SearchProduct(input);
+                if (products.Count > 0)
+                {
+                    foreach (var product in products)
+                    {
+                        Console.WriteLine(product);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Product not found.");
+                }
+            }
+        }
+
+        static void UpdateProductInformation(Inventory inventory)
+        {
+            Console.Write("Enter Product ID to update: ");
+            int id = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter New Product Name: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Enter New Product Description: ");
+            string description = Console.ReadLine();
+
+            Console.Write("Enter New Product Quantity: ");
+            int quantity = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter New Product Price: ");
+            decimal price = decimal.Parse(Console.ReadLine());
+
+            inventory.UpdateProduct(id, name, description, quantity, price);
+        }
+    }
 }
