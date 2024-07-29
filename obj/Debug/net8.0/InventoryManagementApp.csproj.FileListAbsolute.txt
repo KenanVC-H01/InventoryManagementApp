@@ -1,0 +1,14 @@
+C:\VisualStudio\B Module\InventoryManagementApp\bin\Debug\net8.0\InventoryManagementApp.exe
+C:\VisualStudio\B Module\InventoryManagementApp\bin\Debug\net8.0\InventoryManagementApp.deps.json
+C:\VisualStudio\B Module\InventoryManagementApp\bin\Debug\net8.0\InventoryManagementApp.runtimeconfig.json
+C:\VisualStudio\B Module\InventoryManagementApp\bin\Debug\net8.0\InventoryManagementApp.dll
+C:\VisualStudio\B Module\InventoryManagementApp\bin\Debug\net8.0\InventoryManagementApp.pdb
+C:\VisualStudio\B Module\InventoryManagementApp\obj\Debug\net8.0\InventoryManagementApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\VisualStudio\B Module\InventoryManagementApp\obj\Debug\net8.0\InventoryManagementApp.AssemblyInfoInputs.cache
+C:\VisualStudio\B Module\InventoryManagementApp\obj\Debug\net8.0\InventoryManagementApp.AssemblyInfo.cs
+C:\VisualStudio\B Module\InventoryManagementApp\obj\Debug\net8.0\InventoryManagementApp.csproj.CoreCompileInputs.cache
+C:\VisualStudio\B Module\InventoryManagementApp\obj\Debug\net8.0\InventoryManagementApp.dll
+C:\VisualStudio\B Module\InventoryManagementApp\obj\Debug\net8.0\refint\InventoryManagementApp.dll
+C:\VisualStudio\B Module\InventoryManagementApp\obj\Debug\net8.0\InventoryManagementApp.pdb
+C:\VisualStudio\B Module\InventoryManagementApp\obj\Debug\net8.0\InventoryManagementApp.genruntimeconfig.cache
+C:\VisualStudio\B Module\InventoryManagementApp\obj\Debug\net8.0\ref\InventoryManagementApp.dll
